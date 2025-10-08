@@ -8,7 +8,7 @@ pipeline {
     
     environment {
         // Define environment variables for Tomcat
-        WAR_FILE = 'target/roshambo.war' // Path to the generated WAR file (use forward slashes)
+        WAR_FILE = 'target\\roshambo.war' // Path to the generated WAR file (use forward slashes)
         TOMCAT_URL = 'http://localhost:7080' // Tomcat server URL
         TOMCAT_USER = 'a2243u' // Tomcat Manager username
         TOMCAT_PASSWORD = 'u8627a' // Tomcat Manager password
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     // In this case it will be C:\ProgramData\Jenkins\.jenkins\workspace\war-deploy-jenkins-tomcat
-                    def warFilePath = "${WORKSPACE}/${WAR_FILE}" // Use forward slashes in path
+                    def warFilePath = "${WORKSPACE}\\${WAR_FILE}" // Use forward slashes in path
                     echo "WAR file path: ${warFilePath}"
                     
                     // Check if the WAR file exists before deploying
