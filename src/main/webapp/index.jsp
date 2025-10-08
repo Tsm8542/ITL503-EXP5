@@ -66,7 +66,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: white;
+            color: black;
             padding: 0 20px;
         }
 
@@ -162,7 +162,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h2>Welcome to My Beautiful Webpage</h2>
+            <h2>Welcome to My Webpage</h2>
             <p>Simple, elegant, and professional design for your needs.</p>
             <a href="#contact" class="cta-button">Get Started</a>
         </div>
